@@ -70,3 +70,14 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+function getStudentByHouse(hogwarts){
+  hogwarts.filter(student => student.house === 'Gryffindor').map(student => console.log(student.firstName + ' ' + student.lastName)) 
+}
+getStudentByHouse(hogwarts)
+
+
+function getTeacherHavePet(hogwarts) {
+  hogwarts.filter(teacher => teacher.pet !== null).filter(teacher => teacher.occupation === teacher).map(student => console.log(student.firstName + ' ' + student.lastName))
+
+}
+getTeacherHavePet(hogwarts)
